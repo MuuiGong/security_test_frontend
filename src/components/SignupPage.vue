@@ -118,7 +118,7 @@ export default {
 
         // headers 객체에서 X-XSRF-TOKEN을 수동으로 추가하는 부분은 여전히 필요 없습니다.
         // 인터셉터가 자동으로 추가해 줄 것이기 때문입니다.
-        const response = await axios.post('http://localhost:8080/auth/social/register', signupData, {
+        const response = await axios.post('http://localhost:8080/auth/oauth2/register', signupData, {
           withCredentials: true // 이 부분은 유지
         })
 
